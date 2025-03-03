@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    width: 380px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #00d9ff;
+}
+
+input {
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px cyan;
+}
+
+button {
+    background: #00d9ff;
+    color: black;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    margin-top: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00d9ff;
+}
+
+button:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 15px cyan;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: cyan;
+    text-shadow: 0 0 15px cyan;
+}
+
+.bmi-category {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.BMIGuide {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.BMIGuide h3 {
+    color: cyan;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.BMIGuide p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.underweight { color: white; }
+.healthy { color: white; }
+.overweight { color: white; }
+.obese { color: white; }
